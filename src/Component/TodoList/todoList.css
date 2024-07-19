@@ -1,0 +1,133 @@
+.myTodoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 90vh;
+}
+.todoListContainer {
+  background-color: #1b1b3f;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 55vh;
+  border-radius: 5px;
+}
+.todoInputandbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todoInputandbtn input {
+  width: calc(100% - 26%);
+  padding: 13px 10px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid #835af4;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 1rem;
+}
+.todoInputandbtn button {
+  background-color: #835af4;
+  color: #fff;
+  padding: 13px 5px;
+  font-size: 13px;
+  border: 1px solid #835af4;
+  margin-top: 1rem;
+  outline: 0;
+  width: 22%;
+  font-weight: 500;
+}
+.icons {
+  color: #fff;
+}
+
+.allTasks {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.singleTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #835af4;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.icons svg {
+  cursor: pointer;
+}
+.task {
+  font-size: 18px;
+  font-weight: 400;
+}
+button {
+  cursor: pointer;
+}
+
+.filter button {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s;
+  &:hover {
+    color: #835af4;
+    font-weight: 600;
+  }
+}
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.taskIsCompleted {
+  background-color: #00968896;
+  color: black;
+}
+.emptyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+/* Media Query */
+@media only screen and (max-width: 836px) {
+  .todoListContainer {
+    min-width: 60vw !important;
+  }
+}
+@media only screen and (max-width: 642px) {
+  .todoListContainer {
+    min-width: 70vw !important;
+  }
+}
+@media only screen and (max-width: 538px) {
+  .todoListContainer {
+    min-width: 80vw !important;
+  }
+}
+@media only screen and (max-width: 462px) {
+  .todoListContainer {
+    min-width: 90vw !important;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .todoListContainer {
+    min-width: 97vw !important;
+  }
+}
